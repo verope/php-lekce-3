@@ -1,3 +1,26 @@
+
+<?php
+
+/*Úkol č. 2
+
+1. Pracujte v souboru `ukol-2.php`
+2. Před tabulkou vytvořte proměnné `$radek` a `$soucet` do obou přiřaďte číslo `1`
+3. Před tabulkou vytvořte proměnnou `$maximum` do které přiřadíte číslo `5`
+4. Pomocí cyklu while a výše uvedených proměnných vypište tabulku o celkem pěti řádcích:
+  1. v prvním sloupci je vždy číslo řádku (1, 2, 3… - vypisujte proměnnou `$radek`)
+  2. v druhém sloupci je součet všech čísel řádků - od prvního do aktuálního řádku
+5. Každý sudý řádek udělejte modrý (elementu `tr` přidejte třídu 'alert-info': `class="alert-info"`)*/
+
+
+$radek = 1;
+$soucet = 1;
+$maximum = 5;
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +36,28 @@
 <br>
 <div class="container">
 
-
+<?php
+/* -------------
+ * dodelat podle githubu
+ * -------------
+ */
+?>
 
     <table class="table table-bordered">
-        <tr>
-            <td>prvni sloupec</td>
-            <td>druhy sloupec</td>
+            <?php
+            while($radek <= $maximum){
+                echo '<tr><td>'.$radek.'</td>';
+                echo '<td>'.$soucet.'</td></tr>';
+                $radek = $radek + 1;
+                $soucet = $soucet + $radek;
+            }
+            ?>
+            <?php
+            
+            ?>
+
+
+        </td>
         </tr>
     </table>
 
