@@ -52,10 +52,6 @@ $maximum = 5;
                 $soucet = $soucet + $radek;
             }
             ?>
-            <?php
-            
-            ?>
-
 
         </td>
         </tr>
